@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.18.0)
+project (sdl2-test-project)
+find_package (SDL2 REQUIRED)
+include_directories(${SDL2_INCLUDE_DIR})
+add_executable(sdl-test main.cpp)
+target_link_libraries(sdl-test ${SDL2_LIBRARIES})
